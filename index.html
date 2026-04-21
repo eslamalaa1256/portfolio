@@ -3,38 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eslam Salem - Computer Engineering Student & Web Developer</title>
-    <meta name="description" content="Portfolio of Eslam Salem, a Computer Engineering student at Badr University in Cairo. Specializing in web development, programming, and software projects.">
-    <meta name="keywords" content="Eslam Salem, Computer Engineering, Web Developer, Programmer, Portfolio, Cairo, Badr University">
-    <meta name="author" content="Eslam Salem">
-    <meta property="og:title" content="Eslam Salem Portfolio">
-    <meta property="og:description" content="Computer Engineering Student & Web Developer Portfolio">
-    <meta property="og:image" content="https://eslamalaa1256.github.io/portfolio/images/profile.jpg">
-    <meta property="og:url" content="https://eslamalaa1256.github.io/portfolio">
-    <meta name="twitter:card" content="summary_large_image">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Eslam - Computer Engineering Student & Web Developer</title>
+    <meta name="description" content="Eslam builds smart web systems that help businesses grow and automate their work.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
     <!-- Navbar -->
-    <nav>
-        <div class="logo">Eslam Salem</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#learning">Courses & Learning</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="nav-right">
-            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-                <i class="fas fa-moon"></i>
-            </button>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Eslam</div>
+            <ul class="nav-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#why-me">Why Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -43,454 +31,187 @@
         </div>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home">
-        <div id="particles-js"></div>
-        <div class="home-content">
-            <h1>Hello, I'm <span>Eslam Salem</span></h1>
-            <p id="typing-text"></p>
-            <div class="buttons">
-                <a href="#projects" class="btn">View Projects</a>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Eslam</h1>
+            <p class="hero-tagline">I build smart web systems that help businesses grow and automate their work.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
                 <a href="#contact" class="btn btn-secondary">Contact Me</a>
             </div>
         </div>
     </section>
 
-<section id="about">
-    <h2>About Me</h2>
-    <div class="about-content">
-        <div class="profile-picture">
-            <img src="images/profile.jpg" alt="Eslam Salem Profile Picture" loading="lazy">
-        </div>
-        <div class="about-text">
-            <p>Computer Engineering Student with strong foundations in web development, problem-solving, and software engineering. Passionate about building scalable and impactful digital solutions.</p>
-        </div>
-    </div>
-</section>
-
-
-
-    <!-- Decorative Element -->
-    <div class="section-divider">
-        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25"></path>
-            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5"></path>
-            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"></path>
-        </svg>
-    </div>
-
-<!-- Skills Section -->
-<section id="skills" class="skills-section">
-    <h2 class="section-title">Skills</h2>
-
-    <div class="skills-grid">
-        <div class="skill-card">
-            <i class="fab fa-js-square"></i>
-            <h3>JavaScript</h3>
-            <div class="progress-bar">
-                <div class="progress" style="width: 80%;"></div>
-            </div>
-            <p>ES6+, DOM, Async Programming</p>
-        </div>
-
-        <div class="skill-card">
-            <i class="fab fa-html5"></i>
-            <h3>HTML & CSS</h3>
-            <div class="progress-bar">
-                <div class="progress" style="width: 90%;"></div>
-            </div>
-            <p>Responsive Design, Flexbox, Grid</p>
-        </div>
-
-        <div class="skill-card">
-            <i class="fas fa-fire"></i>
-            <h3>Firebase</h3>
-            <div class="progress-bar">
-                <div class="progress" style="width: 70%;"></div>
-            </div>
-            <p>Auth, Firestore, Hosting</p>
-        </div>
-
-        <div class="skill-card">
-            <i class="fas fa-brain"></i>
-            <h3>Problem Solving</h3>
-            <div class="progress-bar">
-                <div class="progress" style="width: 85%;"></div>
-            </div>
-            <p>Logical Thinking & Optimization</p>
-        </div>
-
-        <div class="skill-card">
-            <i class="fas fa-project-diagram"></i>
-            <h3>Algorithms</h3>
-            <div class="progress-bar">
-                <div class="progress" style="width: 75%;"></div>
-            </div>
-            <p>Sorting, Searching, Recursion</p>
-        </div>
-    </div>
-</section>
-
-<!-- ================= Projects Section ================= -->
-<section id="projects">
-    <h2>Projects</h2>
-
-    <div class="filter-buttons">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="web">Web Development</button>
-        <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
-        <button class="filter-btn" data-filter="other">Other</button>
-    </div>
-
-    <div class="projects-grid">
-
-        <div class="project-card" data-modal="otp-system">
-            <div class="project-icons">
-                <i class="fab fa-html5" title="HTML"></i>
-                <i class="fab fa-css3-alt" title="CSS"></i>
-                <i class="fab fa-js-square" title="JavaScript"></i>
-            </div>
-            <h3>OTP Authentication System</h3>
-            <p>Email-based OTP verification system</p>
-            <button class="btn btn-secondary">View Details</button>
-        </div>
-
-        <div class="project-card" data-modal="kiko-store">
-            <div class="project-icons">
-                <i class="fab fa-html5" title="HTML"></i>
-                <i class="fab fa-css3-alt" title="CSS"></i>
-                <i class="fab fa-js-square" title="JavaScript"></i>
-                <i class="fas fa-fire" title="Firebase"></i>
-            </div>
-            <h3>Lola Store</h3>
-            <p>Simple e-commerce website project</p>
-            <button class="btn btn-secondary">View Details</button>
-        </div>
-
-        <div class="project-card" data-modal="codestream">
-            <div class="project-icons">
-                <i class="fab fa-html5" title="HTML"></i>
-                <i class="fab fa-css3-alt" title="CSS"></i>
-                <i class="fab fa-js-square" title="JavaScript"></i>
-            </div>
-            <h3>CodeStream</h3>
-            <p>Programming services company website</p>
-            <button class="btn btn-secondary">View Details</button>
-        </div>
-
-        <div class="project-card" data-modal="yalla-hagz">
-            <div class="project-icons">
-                <i class="fab fa-html5" title="HTML"></i>
-                <i class="fab fa-css3-alt" title="CSS"></i>
-                <i class="fab fa-js-square" title="JavaScript"></i>
-                <i class="fas fa-fire" title="Firebase"></i>
-            </div>
-            <h3>Code Stream</h3>
-            <p>landing page Codestream Services Sales Site</p>
-            <button class="btn btn-secondary">View Details</button>
-    </div>
-</section>
-
-    <!-- Education Section -->
-    <section id="education">
-        <h2>Education</h2>
-        <div class="education-container">
-            <div class="education-item">
-                <h3>Bachelor of Computer Engineering</h3>
-                <p>Badr University in Cairo</p>
-                <p>Expected Graduation: 2030</p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="images/profile.jpg" alt="Eslam profile" loading="lazy">
+                </div>
+                <div class="about-text">
+                    <p>I’m a Computer Engineering student passionate about building real-world systems, not just websites. I focus on creating scalable web applications and business solutions that deliver measurable results.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Courses & Learning Section -->
-<section id="learning">
-    <h2>Courses & Learning</h2>
-    <div class="certifications-grid">
-
-        <div class="certification-card">
-            <i class="fas fa-book"></i>
-            <h3>Web Development Fundamentals</h3>
-            <p>
-                Currently learning HTML, CSS, and JavaScript with focus on responsive design
-                and building real-world web projects.
-            </p>
-        </div>
-
-        <div class="certification-card">
-            <i class="fas fa-book"></i>
-            <h3>Programming Basics (C / C++)</h3>
-            <p>
-                Learning programming fundamentals, logic building, and problem-solving
-                using C and C++.
-            </p>
-        </div>
-
-        <div class="certification-card">
-            <i class="fas fa-book"></i>
-            <h3>Self-Learning & Practice</h3>
-            <p>
-                Improving skills through hands-on projects, continuous practice,
-                and online learning resources.
-            </p>
-        </div>
-
-    </div>
-</section>
-
-
-    <!-- Timeline Section -->
-    <section id="timeline">
-        <h2>My Learning Journey</h2>
-        <div class="timeline-container">
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Started Programming</h3>
-                    <p>2021 - Began learning C and C++ programming languages</p>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Frontend</h3>
+                    <div class="tech-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Backend</h3>
+                    <div class="tech-tags">
+                        <span>Firebase</span>
+                        <span>Firestore</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Tools</h3>
+                    <div class="tech-tags">
+                        <span>Git</span>
+                        <span>VS Code</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Other</h3>
+                    <div class="tech-tags">
+                        <span>UI/UX</span>
+                        <span>System Design</span>
+                        <span>AI Integration</span>
+                    </div>
                 </div>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Kiko Store</h3>
+                    <p>E-commerce website with product catalog and shopping cart.</p>
+                    <div class="tech-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Firebase</span>
+                    </div>
+                    <p class="impact">Streamlined online shopping experience for small businesses.</p>
+                </div>
+                <div class="project-card">
+                    <h3>CodeStream</h3>
+                    <p>Software business platform with secure login and OTP verification system.</p>
+                    <div class="tech-tags">
+                        <span>JavaScript</span>
+                        <span>Firebase</span>
+                        <span>Firestore</span>
+                    </div>
+                    <p class="impact">Complete business dashboard with authentication and real-time data.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Yalla Hagz</h3>
+                    <p>Football field booking system with intelligent scheduling features.</p>
+                    <div class="tech-tags">
+                        <span>JavaScript</span>
+                        <span>Firestore</span>
+                        <span>AI Concepts</span>
+                    </div>
+                    <p class="impact">Smart booking solution that optimizes field usage and availability.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Sumo Robot</h3>
+                    <p>Arduino-based Bluetooth-controlled sumo competition robot.</p>
+                    <div class="tech-tags">
+                        <span>Arduino</span>
+                        <span>C++</span>
+                        <span>Bluetooth</span>
+                    </div>
+                    <p class="impact">Autonomous robot demonstrating embedded systems and control algorithms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-laptop-code"></i>
                     <h3>Web Development</h3>
-                    <p>2022 - Learned HTML, CSS, and JavaScript, built first websites</p>
+                    <p>Clean, fast, responsive websites built to convert visitors.</p>
                 </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>University Studies</h3>
-                    <p>2023 - Started Computer Engineering at Badr University in Cairo</p>
+                <div class="service-card">
+                    <i class="fas fa-server"></i>
+                    <h3>Full Stack Systems</h3>
+                    <p>Complete solutions with login, databases, and dashboards.</p>
                 </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Advanced Projects</h3>
-                    <p>2024 - Developed multiple web applications and software projects</p>
+                <div class="service-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Business Solutions</h3>
+                    <p>Custom web apps that automate and grow your business.</p>
                 </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Certifications</h3>
-                    <p>2024 - Earned Google IT Support, FreeCodeCamp, and Udemy certifications</p>
+                <div class="service-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Professional interfaces that users love and convert.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Fun Facts Section -->
-    <section id="fun-facts">
-        <h2>Fun Facts & Stats</h2>
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-number" data-target="3">0</div>
-                <p>Years of Programming Experience</p>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number" data-target="4">0</div>
-                <p>Projects Completed</p>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number" data-target="3">0</div>
-                <p>Certifications Earned</p>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number" data-target="1000">0</div>
-                <p>Lines of Code Written</p>
-            </div>
+    <!-- Why Me Section -->
+    <section id="why-me" class="why-me">
+        <div class="container">
+            <h2 class="section-title">Why Choose Me?</h2>
+            <p class="why-text">I don't just build websites. I build systems that solve real problems and help businesses grow.</p>
         </div>
     </section>
-
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="experience-container">
-            <div class="experience-item">
-                <h3>Freelance Web Developer</h3>
-                <p>Self-employed</p>
-                <p>Developed multiple web applications and websites for clients.</p>
-            </div>
-            <div class="experience-item">
-                <h3>Programming Projects</h3>
-                <p>Personal Projects</p>
-                <p>Built various software projects including apps and websites.</p>
-            </div>
-        </div>
-    </section>
-
-
-
-<!-- ================= Project Modals ================= -->
-
-<!-- Yalla Hagz -->
-<div id="yalla-hagz" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Yalla Hagz</h2>
-
-        <p>
-            <strong>Description:</strong><br>
-            A web application that helps users find and book football fields
-            by viewing available times and locations.
-        </p>
-
-        <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Firebase</p>
-
-        <p><strong>Key Features:</strong></p>
-        <ul>
-            <li>Football field listings</li>
-            <li>Booking request system</li>
-            <li>User authentication</li>
-            <li>Responsive design</li>
-        </ul>
-
-        <a href="#" class="btn">GitHub</a>
-    </div>
-</div>
-
-<!-- OTP System -->
-<div id="otp-system" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>OTP Authentication System</h2>
-
-        <p>
-            <strong>Description:</strong><br>
-            A simple authentication system that verifies users using
-            One-Time Passwords sent via email.
-        </p>
-
-        <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
-
-        <p><strong>Key Features:</strong></p>
-        <ul>
-            <li>Email OTP verification</li>
-            <li>Form validation</li>
-            <li>Basic secure login flow</li>
-        </ul>
-
-        <a href="#" class="btn">GitHub</a>
-    </div>
-</div>
-
-<!-- Kiko Store -->
-<div id="kiko-store" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Kiko Store</h2>
-
-        <p>
-            <strong>Description:</strong><br>
-            A simple e-commerce website that displays products and allows
-            users to browse items easily.
-        </p>
-
-        <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
-
-        <p><strong>Key Features:</strong></p>
-        <ul>
-            <li>Product listing</li>
-            <li>Clean UI design</li>
-            <li>Responsive layout</li>
-        </ul>
-
-        <a href="#" class="btn">GitHub</a>
-    </div>
-</div>
-
-<!-- CodeStream -->
-<div id="codestream" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>CodeStream</h2>
-
-        <p>
-            <strong>Description:</strong><br>
-            A professional website for a programming services company
-            showcasing services and contact information.
-        </p>
-
-        <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
-
-        <p><strong>Key Features:</strong></p>
-        <ul>
-            <li>Services section</li>
-            <li>Modern UI design</li>
-            <li>Contact form</li>
-        </ul>
-
-        <a href="#" class="btn">GitHub</a>
-    </div>
-</div>
-
-
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:eslamalaa112006@gmail.com">eslamalaa112006@gmail.com</a></p>
-                <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/eslamalaa1256" target="_blank">github.com/eslamalaa1256</a></p>
-                <p><i class="fas fa-globe"></i> Portfolio: <a href="https://eslamalaa1256.github.io/portfolio" target="_blank">My Portfolio</a></p>
-                <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> eslamalaa112006@gmail.com</p>
+                    <a href="https://wa.me/201234567890" class="whatsapp-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="https://github.com/eslamalaa1256" class="github-btn" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
                 </div>
-            </div>
-            <div class="contact-form">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-secondary">Send Message</button>
-                </form>
-                <div id="formMessage" class="form-message"></div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-stats">
-                <div class="footer-stat">
-                    <span class="stat-number" data-target="4">0</span>
-                    <p>Projects</p>
-                </div>
-                <div class="footer-stat">
-                    <span class="stat-number" data-target="3">0</span>
-                    <p>Certifications</p>
-                </div>
-                <div class="footer-stat">
-                    <span class="stat-number" data-target="1000">0</span>
-                    <p>Lines of Code</p>
-                </div>
-            </div>
-            <div class="footer-social">
-                <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-            </div>
-            <p>© 2026 Eslam Salem. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Eslam. All rights reserved.</p>
         </div>
     </footer>
-
-    <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
-
-    <div id="custom-cursor"></div>
 
     <script src="script.js"></script>
 </body>
