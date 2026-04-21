@@ -421,6 +421,6 @@ section {
     .projects-grid,
     .services-grid {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 3.5rem;
     }
 }
