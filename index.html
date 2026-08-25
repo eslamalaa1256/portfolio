@@ -1,311 +1,949 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eslam Salem — Web Developer</title>
-<meta name="description" content="Eslam Salem is a web developer building modern, responsive websites and landing pages for small businesses, startups, and personal brands.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Open Graph -->
-<meta property="og:title" content="Eslam Salem — Web Developer">
-<meta property="og:description" content="Modern websites and landing pages built around your business goals.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="assets/og-image.jpg">
+  <title>Eslam Salem — Web Developer</title>
 
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta
+    name="description"
+    content="Eslam Salem is a web developer building modern, responsive websites and landing pages for small businesses, startups, and personal brands."
+  >
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Eslam Salem — Web Developer">
+  <meta
+    property="og:description"
+    content="Modern websites and landing pages built around your business goals."
+  >
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-image.jpg">
 
-<link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<!-- ============ NAVIGATION ============ -->
-<header class="nav" id="nav">
-  <div class="nav__inner">
-    <a href="#top" class="nav__logo">Eslam Salem</a>
+  <!-- ==================== NAVIGATION ==================== -->
 
-    <nav class="nav__links" id="nav-links">
+  <header class="nav" id="nav">
+
+    <div class="nav__inner">
+
+      <a href="#top" class="nav__logo">
+        Eslam Salem
+      </a>
+
+      <nav class="nav__links" id="nav-links">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="#contact" class="btn btn--primary nav__cta">
+        Let's Talk
+      </a>
+
+      <button
+        class="nav__toggle"
+        id="nav-toggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu">
+
       <a href="#work">Work</a>
       <a href="#services">Services</a>
       <a href="#about">About</a>
       <a href="#process">Process</a>
       <a href="#contact">Contact</a>
-    </nav>
 
-    <a href="#contact" class="btn btn--primary nav__cta">Let's Talk</a>
-
-    <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-
-  <div class="mobile-menu" id="mobile-menu">
-    <a href="#work">Work</a>
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
-    <a href="#process">Process</a>
-    <a href="#contact">Contact</a>
-    <a href="#contact" class="btn btn--primary">Let's Talk</a>
-  </div>
-</header>
-
-<main id="main">
-
-<!-- ============ HERO ============ -->
-<section class="hero" id="top">
-  <div class="hero__inner">
-    <div class="hero__text">
-      <p class="eyebrow">Eslam Salem — Web Developer</p>
-      <h1 class="hero__headline">
-        I build modern websites &amp; landing pages for businesses.
-      </h1>
-      <p class="hero__sub">
-        Clean, responsive websites designed around your business and your goals.
-      </p>
-      <p class="hero__value">
-        I focus on building clean, practical websites that help businesses present themselves professionally online.
-      </p>
-      <div class="hero__actions">
-        <a href="#contact" class="btn btn--primary btn--large">Let's Talk</a>
-        <a href="#work" class="btn btn--ghost">View My Work</a>
-      </div>
-    </div>
-
-    <div class="hero__visual" aria-hidden="true">
-      <div class="browser">
-        <div class="browser__bar">
-          <span class="browser__dot"></span>
-          <span class="browser__dot"></span>
-          <span class="browser__dot"></span>
-          <div class="browser__url">
-            <span id="typed-url"></span><span class="caret">|</span>
-          </div>
-        </div>
-        <div class="browser__body">
-          <div class="browser__line browser__line--title"></div>
-          <div class="browser__line browser__line--sub"></div>
-          <div class="browser__grid">
-            <div class="browser__block"></div>
-            <div class="browser__block"></div>
-            <div class="browser__block"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ SELECTED WORK ============ -->
-<section class="work" id="work">
-  <div class="section-head">
-    <p class="eyebrow">Selected Work</p>
-    <h2>A few projects I've worked on.</h2>
-  </div>
-
-  <div class="projects">
-
-    <article class="project">
-      <div class="project__preview">
-        <div class="browser browser--small">
-          <div class="browser__bar">
-            <span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span>
-            <div class="browser__url browser__url--static">atlantisegy.com</div>
-          </div>
-          <!-- Replace assets/projects/atlantis.jpg with a real screenshot of the site -->
-          <div class="project__media">
-            <img src="assets/atlantis.jpg" alt="Atlantis Marine Services website preview" loading="lazy"
-                 onerror="this.closest('.project__media').classList.add('is-missing')">
-            <div class="project__media-fallback" aria-hidden="true">
-              <span>Screenshot goes here</span>
-              <code>assets/atlantis.jpg</code>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="project__info">
-        <span class="project__status">Completed — Client Project</span>
-        <h3>Atlantis Marine Services</h3>
-        <p class="project__type">Business Website</p>
-        <p class="project__desc">Website redesign and improvement for a marine services company, focusing on structure, visual presentation, responsiveness, performance, and technical setup.</p>
-        <a href="https://atlantisegy.com/" target="_blank" rel="noopener" class="btn btn--outline">View Project</a>
-      </div>
-    </article>
-
-    <article class="project project--reverse">
-      <div class="project__preview">
-        <div class="browser browser--small">
-          <div class="browser__bar">
-            <span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span>
-            <div class="browser__url browser__url--static">eslamalaa1256.github.io/lola</div>
-          </div>
-          <!-- Replace assets/projects/lola.jpg with a real screenshot of the site -->
-          <div class="project__media">
-            <img src="assets/lola.jpg" alt="LOLA e-commerce website preview" loading="lazy"
-                 onerror="this.closest('.project__media').classList.add('is-missing')">
-            <div class="project__media-fallback" aria-hidden="true">
-              <span>Screenshot goes here</span>
-              <code>assets/lola.jpg</code>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="project__info">
-        <span class="project__status">Personal Project</span>
-        <h3>LOLA</h3>
-        <p class="project__type">E-commerce Website</p>
-        <p class="project__desc">An Arabic RTL e-commerce website for a clothing and shoes store, featuring product listings, sizes, galleries, ratings, cart, wishlist, and an admin dashboard.</p>
-        <a href="https://eslamalaa1256.github.io/lola/" target="_blank" rel="noopener" class="btn btn--outline">View Project</a>
-      </div>
-    </article>
-
-    <article class="project project--soon">
-      <div class="project__soon-mark">+</div>
-      <h3>More projects coming soon.</h3>
-      <p>I'm always building. This spot's reserved for what's next.</p>
-    </article>
-
-  </div>
-
-  <div class="building">
-    <span class="building__dot" aria-hidden="true"></span>
-    <p><strong>Yalla Hagz</strong> — Currently Building. More details soon.</p>
-  </div>
-</section>
-
-<!-- ============ SERVICES ============ -->
-<section class="services" id="services">
-  <div class="section-head">
-    <p class="eyebrow">What I Do</p>
-    <h2>Services</h2>
-  </div>
-
-  <div class="services__grid">
-    <div class="service">
-      <span class="service__num">01</span>
-      <h3>Website Development</h3>
-      <p>Modern websites built around your business, brand, and goals.</p>
-    </div>
-    <div class="service">
-      <span class="service__num">02</span>
-      <h3>Landing Pages</h3>
-      <p>Focused landing pages designed to present your offer clearly and drive visitors to take action.</p>
-    </div>
-    <div class="service">
-      <span class="service__num">03</span>
-      <h3>Website Redesign</h3>
-      <p>Modernizing outdated websites with better design, structure, responsiveness, and user experience.</p>
-    </div>
-    <div class="service">
-      <span class="service__num">04</span>
-      <h3>Website Optimization</h3>
-      <p>Improving website speed, usability, responsiveness, and technical performance.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ============ ABOUT ============ -->
-<section class="about" id="about">
-  <div class="about__inner">
-    <p class="eyebrow">A little about me</p>
-    <p class="about__text">
-      I'm Eslam, a Computer Engineering student and Web Developer focused on building modern websites and digital experiences. I enjoy turning ideas into clean, functional websites and helping businesses present themselves better online.
-    </p>
-  </div>
-</section>
-
-<!-- ============ PROCESS ============ -->
-<section class="process" id="process">
-  <div class="section-head">
-    <p class="eyebrow">How I Work</p>
-    <h2>Process</h2>
-  </div>
-
-  <div class="process__list">
-    <div class="process__step">
-      <span class="process__num">01</span>
-      <div>
-        <h3>Understand</h3>
-        <p>I learn about your business, goals, audience, and what you need from the website.</p>
-      </div>
-    </div>
-    <div class="process__step">
-      <span class="process__num">02</span>
-      <div>
-        <h3>Plan</h3>
-        <p>We define the structure, content, features, and visual direction.</p>
-      </div>
-    </div>
-    <div class="process__step">
-      <span class="process__num">03</span>
-      <div>
-        <h3>Build</h3>
-        <p>I design and develop the website with responsiveness and usability in mind.</p>
-      </div>
-    </div>
-    <div class="process__step">
-      <span class="process__num">04</span>
-      <div>
-        <h3>Launch</h3>
-        <p>I test everything, optimize the website, and get it ready to go live.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CONTACT ============ -->
-<section class="contact" id="contact">
-  <div class="contact__inner">
-    <p class="eyebrow">Have a project in mind?</p>
-    <h2>Let's build something.</h2>
-    <p class="contact__text">
-      Tell me what you're working on and what you need. I'll get back to you and we can figure out the best approach.
-    </p>
-
-    <div class="contact__methods">
-      <!--
-        Replace COUNTRYCODEPHONENUMBER below with your real number,
-        digits only, no spaces / plus signs / dashes.
-        Example: https://wa.me/201234567890
-      -->
-      <a href="https://wa.me/COUNTRYCODEPHONENUMBER" data-contact="whatsapp" class="contact__method contact__method--primary" target="_blank" rel="noopener">
-        <span class="contact__label">WhatsApp</span>
-        <span class="contact__value">Message me directly</span>
+      <a href="#contact" class="btn btn--primary">
+        Let's Talk
       </a>
-      <!-- Replace YOUR_EMAIL_HERE with your real email address -->
-      <a href="mailto:YOUR_EMAIL_HERE" data-contact="email" class="contact__method">
-        <span class="contact__label">Email</span>
-        <span class="contact__value">Send an email</span>
-      </a>
+
     </div>
 
-    <a href="https://wa.me/COUNTRYCODEPHONENUMBER" data-contact="whatsapp" target="_blank" rel="noopener" class="btn btn--primary btn--large">Let's Talk</a>
-  </div>
-</section>
+  </header>
 
-</main>
 
-<!-- ============ FOOTER ============ -->
-<footer class="footer">
-  <div class="footer__inner">
-    <div class="footer__brand">
-      <p class="footer__name">Eslam Salem</p>
-      <p class="footer__role">Web Developer</p>
+  <main id="main">
+
+
+    <!-- ==================== HERO ==================== -->
+
+    <section class="hero" id="top">
+
+      <div class="hero__inner">
+
+        <div class="hero__text">
+
+          <p class="eyebrow">
+            Eslam Salem — Web Developer
+          </p>
+
+          <h1 class="hero__headline">
+            I build modern websites &amp; landing pages for businesses.
+          </h1>
+
+          <p class="hero__sub">
+            Clean, responsive websites designed around your business and your goals.
+          </p>
+
+          <p class="hero__value">
+            I focus on building clean, practical websites that help businesses present themselves professionally online.
+          </p>
+
+          <div class="hero__actions">
+
+            <a href="#contact" class="btn btn--primary btn--large">
+              Let's Talk
+            </a>
+
+            <a href="#work" class="btn btn--ghost">
+              View My Work
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="hero__visual" aria-hidden="true">
+
+          <div class="browser">
+
+            <div class="browser__bar">
+
+              <span class="browser__dot"></span>
+              <span class="browser__dot"></span>
+              <span class="browser__dot"></span>
+
+              <div class="browser__url">
+                <span id="typed-url"></span>
+                <span class="caret">|</span>
+              </div>
+
+            </div>
+
+            <div class="browser__body">
+
+              <div class="browser__line browser__line--title"></div>
+
+              <div class="browser__line browser__line--sub"></div>
+
+              <div class="browser__grid">
+
+                <div class="browser__block"></div>
+                <div class="browser__block"></div>
+                <div class="browser__block"></div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================== SELECTED WORK ==================== -->
+
+    <section class="work" id="work">
+
+      <div class="section-head">
+
+        <p class="eyebrow">
+          Selected Work
+        </p>
+
+        <h2>
+          A few projects I've worked on.
+        </h2>
+
+      </div>
+
+
+      <div class="projects">
+
+
+        <!-- ==================== PROJECT 01 — ATLANTIS ==================== -->
+
+        <article class="project">
+
+          <div class="project__preview">
+
+            <div class="browser browser--small">
+
+              <div class="browser__bar">
+
+                <span class="browser__dot"></span>
+                <span class="browser__dot"></span>
+                <span class="browser__dot"></span>
+
+                <div class="browser__url browser__url--static">
+                  atlantisegy.com
+                </div>
+
+              </div>
+
+
+              <div class="project__media">
+
+                <img
+                  src="assets/atlantis.jpg"
+                  alt="Atlantis Marine Services website preview"
+                  loading="lazy"
+                  onerror="this.closest('.project__media').classList.add('is-missing')"
+                >
+
+                <div
+                  class="project__media-fallback"
+                  aria-hidden="true"
+                >
+                  <span>
+                    Screenshot goes here
+                  </span>
+
+                  <code>
+                    assets/atlantis.jpg
+                  </code>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="project__info">
+
+            <span class="project__status">
+              Completed — Client Project
+            </span>
+
+            <h3>
+              Atlantis Marine Services
+            </h3>
+
+            <p class="project__type">
+              Business Website
+            </p>
+
+            <p class="project__desc">
+              Website redesign and improvement for a marine services company,
+              focusing on structure, visual presentation, responsiveness,
+              performance, and technical setup.
+            </p>
+
+            <a
+              href="https://atlantisegy.com/"
+              target="_blank"
+              rel="noopener"
+              class="btn btn--outline"
+            >
+              View Project
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- ==================== PROJECT 02 — LOLA ==================== -->
+
+        <article class="project project--reverse">
+
+          <div class="project__preview">
+
+            <div class="browser browser--small">
+
+              <div class="browser__bar">
+
+                <span class="browser__dot"></span>
+                <span class="browser__dot"></span>
+                <span class="browser__dot"></span>
+
+                <div class="browser__url browser__url--static">
+                  lola-store
+                </div>
+
+              </div>
+
+
+              <div class="project__media">
+
+                <img
+                  src="assets/lola.jpg"
+                  alt="LOLA e-commerce website preview"
+                  loading="lazy"
+                  onerror="this.closest('.project__media').classList.add('is-missing')"
+                >
+
+                <div
+                  class="project__media-fallback"
+                  aria-hidden="true"
+                >
+
+                  <span>
+                    Screenshot goes here
+                  </span>
+
+                  <code>
+                    assets/lola.jpg
+                  </code>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="project__info">
+
+            <span class="project__status">
+              Personal Project
+            </span>
+
+            <h3>
+              LOLA
+            </h3>
+
+            <p class="project__type">
+              E-commerce Website
+            </p>
+
+            <p class="project__desc">
+              An Arabic RTL e-commerce website for a clothing and shoes store,
+              featuring product listings, sizes, galleries, ratings, cart,
+              wishlist, and an admin dashboard.
+            </p>
+
+            <a
+              href="https://eslamalaa1256.github.io/lola/"
+              target="_blank"
+              rel="noopener"
+              class="btn btn--outline"
+            >
+              View Project
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- ==================== PROJECT 03 — BEAUTY SALON ==================== -->
+
+        <article class="project">
+
+          <div class="project__preview">
+
+            <div class="browser browser--small">
+
+              <div class="browser__bar">
+
+                <span class="browser__dot"></span>
+                <span class="browser__dot"></span>
+                <span class="browser__dot"></span>
+
+                <div class="browser__url browser__url--static">
+                  beauty-salon
+                </div>
+
+              </div>
+
+
+              <div class="project__media">
+
+                <img
+                  src="assets/beauty-salon.jpg"
+                  alt="Beauty Salon landing page preview"
+                  loading="lazy"
+                  onerror="this.closest('.project__media').classList.add('is-missing')"
+                >
+
+                <div
+                  class="project__media-fallback"
+                  aria-hidden="true"
+                >
+
+                  <span>
+                    Screenshot goes here
+                  </span>
+
+                  <code>
+                    assets/beauty-salon.jpg
+                  </code>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="project__info">
+
+            <span class="project__status">
+              Personal Project
+            </span>
+
+            <h3>
+              Beauty Salon
+            </h3>
+
+            <p class="project__type">
+              Business Landing Page
+            </p>
+
+            <p class="project__desc">
+              A premium landing page concept for a beauty salon,
+              designed to present services, build trust, and encourage
+              customers to book an appointment.
+            </p>
+
+            <a
+              href="https://eslamalaa1256.github.io/beauty-salon/"
+              target="_blank"
+              rel="noopener"
+              class="btn btn--outline"
+            >
+              View Project
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- ==================== PROJECT 04 — RESTAURANT & CAFE ==================== -->
+
+        <article class="project project--reverse">
+
+          <div class="project__preview">
+
+            <div class="browser browser--small">
+
+              <div class="browser__bar">
+
+                <span class="browser__dot"></span>
+                <span class="browser__dot"></span>
+                <span class="browser__dot"></span>
+
+                <div class="browser__url browser__url--static">
+                  restaurant-cafe
+                </div>
+
+              </div>
+
+
+              <div class="project__media">
+
+                <img
+                  src="assets/restaurant-cafe.jpg"
+                  alt="Restaurant and Cafe website preview"
+                  loading="lazy"
+                  onerror="this.closest('.project__media').classList.add('is-missing')"
+                >
+
+                <div
+                  class="project__media-fallback"
+                  aria-hidden="true"
+                >
+
+                  <span>
+                    Screenshot goes here
+                  </span>
+
+                  <code>
+                    assets/restaurant-cafe.jpg
+                  </code>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="project__info">
+
+            <span class="project__status">
+              Personal Project
+            </span>
+
+            <h3>
+              Restaurant &amp; Cafe
+            </h3>
+
+            <p class="project__type">
+              Restaurant Website
+            </p>
+
+            <p class="project__desc">
+              A modern restaurant and cafe website concept focused on
+              visual presentation, menu browsing, responsive design,
+              and a simple customer experience.
+            </p>
+
+            <a
+              href="https://eslamalaa1256.github.io/Restaurant-Cafe/"
+              target="_blank"
+              rel="noopener"
+              class="btn btn--outline"
+            >
+              View Project
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- ==================== COMING SOON ==================== -->
+
+        <article class="project project--soon">
+
+          <div class="project__soon-mark">
+            +
+          </div>
+
+          <h3>
+            More projects coming soon.
+          </h3>
+
+          <p>
+            I'm always building. This spot's reserved for what's next.
+          </p>
+
+        </article>
+
+
+      </div>
+
+
+      <!-- ==================== BUILDING ==================== -->
+
+      <div class="building">
+
+        <span
+          class="building__dot"
+          aria-hidden="true"
+        ></span>
+
+        <p>
+          <strong>Yalla Hagz</strong>
+          — Currently Building. More details soon.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================== SERVICES ==================== -->
+
+    <section class="services" id="services">
+
+      <div class="section-head">
+
+        <p class="eyebrow">
+          What I Do
+        </p>
+
+        <h2>
+          Services
+        </h2>
+
+      </div>
+
+
+      <div class="services__grid">
+
+        <div class="service">
+
+          <span class="service__num">
+            01
+          </span>
+
+          <h3>
+            Website Development
+          </h3>
+
+          <p>
+            Modern websites built around your business, brand, and goals.
+          </p>
+
+        </div>
+
+
+        <div class="service">
+
+          <span class="service__num">
+            02
+          </span>
+
+          <h3>
+            Landing Pages
+          </h3>
+
+          <p>
+            Focused landing pages designed to present your offer clearly
+            and drive visitors to take action.
+          </p>
+
+        </div>
+
+
+        <div class="service">
+
+          <span class="service__num">
+            03
+          </span>
+
+          <h3>
+            Website Redesign
+          </h3>
+
+          <p>
+            Modernizing outdated websites with better design, structure,
+            responsiveness, and user experience.
+          </p>
+
+        </div>
+
+
+        <div class="service">
+
+          <span class="service__num">
+            04
+          </span>
+
+          <h3>
+            Website Optimization
+          </h3>
+
+          <p>
+            Improving website speed, usability, responsiveness,
+            and technical performance.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================== ABOUT ==================== -->
+
+    <section class="about" id="about">
+
+      <div class="about__inner">
+
+        <p class="eyebrow">
+          A little about me
+        </p>
+
+        <p class="about__text">
+          I'm Eslam, a Computer Engineering student and Web Developer
+          focused on building modern websites and digital experiences.
+          I enjoy turning ideas into clean, functional websites and
+          helping businesses present themselves better online.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================== PROCESS ==================== -->
+
+    <section class="process" id="process">
+
+      <div class="section-head">
+
+        <p class="eyebrow">
+          How I Work
+        </p>
+
+        <h2>
+          Process
+        </h2>
+
+      </div>
+
+
+      <div class="process__list">
+
+
+        <div class="process__step">
+
+          <span class="process__num">
+            01
+          </span>
+
+          <div>
+
+            <h3>
+              Understand
+            </h3>
+
+            <p>
+              I learn about your business, goals, audience,
+              and what you need from the website.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="process__step">
+
+          <span class="process__num">
+            02
+          </span>
+
+          <div>
+
+            <h3>
+              Plan
+            </h3>
+
+            <p>
+              We define the structure, content, features,
+              and visual direction.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="process__step">
+
+          <span class="process__num">
+            03
+          </span>
+
+          <div>
+
+            <h3>
+              Build
+            </h3>
+
+            <p>
+              I design and develop the website with
+              responsiveness and usability in mind.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="process__step">
+
+          <span class="process__num">
+            04
+          </span>
+
+          <div>
+
+            <h3>
+              Launch
+            </h3>
+
+            <p>
+              I test everything, optimize the website,
+              and get it ready to go live.
+            </p>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================== CONTACT ==================== -->
+
+    <section class="contact" id="contact">
+
+      <div class="contact__inner">
+
+        <p class="eyebrow">
+          Have a project in mind?
+        </p>
+
+        <h2>
+          Let's build something.
+        </h2>
+
+        <p class="contact__text">
+          Tell me what you're working on and what you need.
+          I'll get back to you and we can figure out the best approach.
+        </p>
+
+
+        <div class="contact__methods">
+
+
+          <!-- WhatsApp -->
+
+          <a
+            href="https://wa.me/COUNTRYCODEPHONENUMBER"
+            data-contact="whatsapp"
+            class="contact__method contact__method--primary"
+            target="_blank"
+            rel="noopener"
+          >
+
+            <span class="contact__label">
+              WhatsApp
+            </span>
+
+            <span class="contact__value">
+              Message me directly
+            </span>
+
+          </a>
+
+
+          <!-- Email -->
+
+          <a
+            href="mailto:YOUR_EMAIL_HERE"
+            data-contact="email"
+            class="contact__method"
+          >
+
+            <span class="contact__label">
+              Email
+            </span>
+
+            <span class="contact__value">
+              Send an email
+            </span>
+
+          </a>
+
+
+        </div>
+
+
+        <a
+          href="https://wa.me/COUNTRYCODEPHONENUMBER"
+          data-contact="whatsapp"
+          target="_blank"
+          rel="noopener"
+          class="btn btn--primary btn--large"
+        >
+          Let's Talk
+        </a>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- ==================== FOOTER ==================== -->
+
+  <footer class="footer">
+
+    <div class="footer__inner">
+
+
+      <div class="footer__brand">
+
+        <p class="footer__name">
+          Eslam Salem
+        </p>
+
+        <p class="footer__role">
+          Web Developer
+        </p>
+
+      </div>
+
+
+      <nav class="footer__links">
+
+        <a href="#work">
+          Work
+        </a>
+
+        <a href="#services">
+          Services
+        </a>
+
+        <a href="#about">
+          About
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
+
+      </nav>
+
+
+      <p class="footer__copy">
+        © 2026 Eslam Salem
+      </p>
+
+
     </div>
-    <nav class="footer__links">
-      <a href="#work">Work</a>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <p class="footer__copy">© 2026 Eslam Salem</p>
-  </div>
-</footer>
 
-<script src="js/main.js"></script>
+  </footer>
+
+
+  <script src="js/main.js"></script>
+
 </body>
 </html>
