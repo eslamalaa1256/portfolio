@@ -1,205 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eslam - Computer Engineering Student & Web Developer</title>
-    <meta name="description" content="Eslam builds smart web systems that help businesses grow and automate their work.">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eslam Salem — Web Developer</title>
+<meta name="description" content="Eslam Salem is a web developer building modern, responsive websites and landing pages for small businesses, startups, and personal brands.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Eslam Salem — Web Developer">
+<meta property="og:description" content="Modern websites and landing pages built around your business goals.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/og-image.jpg">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">Eslam</div>
-            <ul class="nav-menu">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#why-me">Why Me</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__logo">Eslam Salem</a>
+
+    <nav class="nav__links" id="nav-links">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Eslam</h1>
-            <p class="hero-tagline">I build smart web systems that help businesses grow and automate their work.</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+    <a href="#contact" class="btn btn--primary nav__cta">Let's Talk</a>
+
+    <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#work">Work</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#process">Process</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="btn btn--primary">Let's Talk</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero__inner">
+    <div class="hero__text">
+      <p class="eyebrow">Eslam Salem — Web Developer</p>
+      <h1 class="hero__headline">
+        I build modern websites &amp; landing pages for businesses.
+      </h1>
+      <p class="hero__sub">
+        Clean, responsive websites designed around your business and your goals.
+      </p>
+      <p class="hero__value">
+        I focus on building clean, practical websites that help businesses present themselves professionally online.
+      </p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary btn--large">Let's Talk</a>
+        <a href="#work" class="btn btn--ghost">View My Work</a>
+      </div>
+    </div>
+
+    <div class="hero__visual" aria-hidden="true">
+      <div class="browser">
+        <div class="browser__bar">
+          <span class="browser__dot"></span>
+          <span class="browser__dot"></span>
+          <span class="browser__dot"></span>
+          <div class="browser__url">
+            <span id="typed-url"></span><span class="caret">|</span>
+          </div>
+        </div>
+        <div class="browser__body">
+          <div class="browser__line browser__line--title"></div>
+          <div class="browser__line browser__line--sub"></div>
+          <div class="browser__grid">
+            <div class="browser__block"></div>
+            <div class="browser__block"></div>
+            <div class="browser__block"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SELECTED WORK ============ -->
+<section class="work" id="work">
+  <div class="section-head">
+    <p class="eyebrow">Selected Work</p>
+    <h2>A few projects I've worked on.</h2>
+  </div>
+
+  <div class="projects">
+
+    <article class="project">
+      <div class="project__preview">
+        <div class="browser browser--small">
+          <div class="browser__bar">
+            <span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span>
+            <div class="browser__url browser__url--static">atlantisegy.com</div>
+          </div>
+          <!-- Replace assets/projects/atlantis.jpg with a real screenshot of the site -->
+          <div class="project__media">
+            <img src="assets/atlantis.jpg" alt="Atlantis Marine Services website preview" loading="lazy"
+                 onerror="this.closest('.project__media').classList.add('is-missing')">
+            <div class="project__media-fallback" aria-hidden="true">
+              <span>Screenshot goes here</span>
+              <code>assets/projects/atlantis.jpg</code>
             </div>
+          </div>
         </div>
-    </section>
+      </div>
+      <div class="project__info">
+        <span class="project__status">Completed — Client Project</span>
+        <h3>Atlantis Marine Services</h3>
+        <p class="project__type">Business Website</p>
+        <p class="project__desc">Website redesign and improvement for a marine services company, focusing on structure, visual presentation, responsiveness, performance, and technical setup.</p>
+        <a href="https://atlantisegy.com/" target="_blank" rel="noopener" class="btn btn--outline">View Project</a>
+      </div>
+    </article>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-grid">
-                <div class="about-image">
-                    <img src="images/profile.jpg" alt="Eslam profile" loading="lazy">
-                </div>
-                <div class="about-text">
-                    <p>I’m a Computer Engineering student passionate about building real-world systems, not just websites. I focus on creating scalable web applications and business solutions that deliver measurable results.</p>
-                </div>
+    <article class="project project--reverse">
+      <div class="project__preview">
+        <div class="browser browser--small">
+          <div class="browser__bar">
+            <span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span>
+            <div class="browser__url browser__url--static">eslamalaa1256.github.io/lola</div>
+          </div>
+          <!-- Replace assets/projects/lola.jpg with a real screenshot of the site -->
+          <div class="project__media">
+            <img src="assets/lola.jpg" alt="LOLA e-commerce website preview" loading="lazy"
+                 onerror="this.closest('.project__media').classList.add('is-missing')">
+            <div class="project__media-fallback" aria-hidden="true">
+              <span>Screenshot goes here</span>
+              <code>assets/projects/lola.jpg</code>
             </div>
+          </div>
         </div>
-    </section>
+      </div>
+      <div class="project__info">
+        <span class="project__status">Personal Project</span>
+        <h3>LOLA</h3>
+        <p class="project__type">E-commerce Website</p>
+        <p class="project__desc">An Arabic RTL e-commerce website for a clothing and shoes store, featuring product listings, sizes, galleries, ratings, cart, wishlist, and an admin dashboard.</p>
+        <a href="https://eslamalaa1256.github.io/lola/" target="_blank" rel="noopener" class="btn btn--outline">View Project</a>
+      </div>
+    </article>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fas fa-code"></i>
-                    <h3>Frontend</h3>
-                    <div class="tech-tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <h3>Backend</h3>
-                    <div class="tech-tags">
-                        <span>Firebase</span>
-                        <span>Firestore</span>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-tools"></i>
-                    <h3>Tools</h3>
-                    <div class="tech-tags">
-                        <span>Git</span>
-                        <span>VS Code</span>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-brain"></i>
-                    <h3>Other</h3>
-                    <div class="tech-tags">
-                        <span>UI/UX</span>
-                        <span>System Design</span>
-                        <span>AI Integration</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <article class="project project--soon">
+      <div class="project__soon-mark">+</div>
+      <h3>More projects coming soon.</h3>
+      <p>I'm always building. This spot's reserved for what's next.</p>
+    </article>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-<div class="project-card">
-                    <h3>LOLA Store</h3>
-                    <p>E-commerce website with product catalog and shopping cart.</p>
-                    <div class="tech-tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                        <span>Firebase</span>
-                    </div>
-                    <p class="impact">Streamlined online shopping experience for small businesses.</p>
-                    <div class="project-buttons">
-                        <a href="https://eslamalaa1256.github.io/lola/" class="btn btn-primary" target="_blank">Live Demo</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <h3>CodeStream</h3>
-                    <p>Software business platform with secure login and OTP verification system.</p>
-                    <div class="tech-tags">
-                        <span>JavaScript</span>
-                        <span>Firebase</span>
-                        <span>Firestore</span>
-                    </div>
-                    <p class="impact">Complete business dashboard with authentication and real-time data.</p>
-                    <div class="project-buttons">
-                        <a href="https://euphonious-lily-53f778.netlify.app/" class="btn btn-primary" target="_blank">Live Demo</a>
-                    </div>
-                </div>
-                </div>
-                
-            </div>
-    </section>
+  </div>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title">Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>Web Development</h3>
-                    <p>Clean, fast, responsive websites built to convert visitors.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-server"></i>
-                    <h3>Full Stack Systems</h3>
-                    <p>Complete solutions with login, databases, and dashboards.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Business Solutions</h3>
-                    <p>Custom web apps that automate and grow your business.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-paint-brush"></i>
-                    <h3>UI/UX Design</h3>
-                    <p>Professional interfaces that users love and convert.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="building">
+    <span class="building__dot" aria-hidden="true"></span>
+    <p><strong>Yalla Hagz</strong> — Currently Building. More details soon.</p>
+  </div>
+</section>
 
-    <!-- Why Me Section -->
-    <section id="why-me" class="why-me">
-        <div class="container">
-            <h2 class="section-title">Why Choose Me?</h2>
-            <p class="why-text">I don't just build websites. I build systems that solve real problems and help businesses grow.</p>
-        </div>
-    </section>
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
+  <div class="section-head">
+    <p class="eyebrow">What I Do</p>
+    <h2>Services</h2>
+  </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <p><i class="fas fa-envelope"></i> eslamalaa112006@gmail.com</p>
-                    <a href="https://wa.me/201019073627" class="whatsapp-btn" target="_blank">
-                        <i class="fab fa-whatsapp"></i> WhatsApp
-                    </a>
-                    <a href="https://github.com/eslamalaa1256" class="github-btn" target="_blank">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="services__grid">
+    <div class="service">
+      <span class="service__num">01</span>
+      <h3>Website Development</h3>
+      <p>Modern websites built around your business, brand, and goals.</p>
+    </div>
+    <div class="service">
+      <span class="service__num">02</span>
+      <h3>Landing Pages</h3>
+      <p>Focused landing pages designed to present your offer clearly and drive visitors to take action.</p>
+    </div>
+    <div class="service">
+      <span class="service__num">03</span>
+      <h3>Website Redesign</h3>
+      <p>Modernizing outdated websites with better design, structure, responsiveness, and user experience.</p>
+    </div>
+    <div class="service">
+      <span class="service__num">04</span>
+      <h3>Website Optimization</h3>
+      <p>Improving website speed, usability, responsiveness, and technical performance.</p>
+    </div>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Eslam. All rights reserved.</p>
-        </div>
-    </footer>
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="about__inner">
+    <p class="eyebrow">A little about me</p>
+    <p class="about__text">
+      I'm Eslam, a Computer Engineering student and Web Developer focused on building modern websites and digital experiences. I enjoy turning ideas into clean, functional websites and helping businesses present themselves better online.
+    </p>
+  </div>
+</section>
 
-    <script src="script.js"></script>
+<!-- ============ PROCESS ============ -->
+<section class="process" id="process">
+  <div class="section-head">
+    <p class="eyebrow">How I Work</p>
+    <h2>Process</h2>
+  </div>
+
+  <div class="process__list">
+    <div class="process__step">
+      <span class="process__num">01</span>
+      <div>
+        <h3>Understand</h3>
+        <p>I learn about your business, goals, audience, and what you need from the website.</p>
+      </div>
+    </div>
+    <div class="process__step">
+      <span class="process__num">02</span>
+      <div>
+        <h3>Plan</h3>
+        <p>We define the structure, content, features, and visual direction.</p>
+      </div>
+    </div>
+    <div class="process__step">
+      <span class="process__num">03</span>
+      <div>
+        <h3>Build</h3>
+        <p>I design and develop the website with responsiveness and usability in mind.</p>
+      </div>
+    </div>
+    <div class="process__step">
+      <span class="process__num">04</span>
+      <div>
+        <h3>Launch</h3>
+        <p>I test everything, optimize the website, and get it ready to go live.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="contact__inner">
+    <p class="eyebrow">Have a project in mind?</p>
+    <h2>Let's build something.</h2>
+    <p class="contact__text">
+      Tell me what you're working on and what you need. I'll get back to you and we can figure out the best approach.
+    </p>
+
+    <div class="contact__methods">
+      <!--
+        Replace COUNTRYCODEPHONENUMBER below with your real number,
+        digits only, no spaces / plus signs / dashes.
+        Example: https://wa.me/201234567890
+      -->
+      <a href="https://wa.me/COUNTRYCODEPHONENUMBER" data-contact="whatsapp" class="contact__method contact__method--primary" target="_blank" rel="noopener">
+        <span class="contact__label">WhatsApp</span>
+        <span class="contact__value">Message me directly</span>
+      </a>
+      <!-- Replace YOUR_EMAIL_HERE with your real email address -->
+      <a href="mailto:YOUR_EMAIL_HERE" data-contact="email" class="contact__method">
+        <span class="contact__label">Email</span>
+        <span class="contact__value">Send an email</span>
+      </a>
+    </div>
+
+    <a href="https://wa.me/COUNTRYCODEPHONENUMBER" data-contact="whatsapp" target="_blank" rel="noopener" class="btn btn--primary btn--large">Let's Talk</a>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <p class="footer__name">Eslam Salem</p>
+      <p class="footer__role">Web Developer</p>
+    </div>
+    <nav class="footer__links">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p class="footer__copy">© 2026 Eslam Salem</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
