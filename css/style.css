@@ -524,3 +524,86 @@ section{ padding: 120px 0; }
 ============================================================= */
 .reveal{ opacity:0; transform: translateY(16px); transition: all 0.6s var(--ease); }
 .reveal.is-visible{ opacity:1; transform:none; }
+
+/* =============================================================
+   PROJECT ENHANCEMENTS
+============================================================= */
+
+.project__info{
+  position: relative;
+}
+
+.project__status{
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.project__status::before{
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-soft);
+}
+
+.project__status--client{
+  color: var(--accent);
+}
+
+.project__tags{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 24px;
+}
+
+.project__tags span{
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  border: 1px solid var(--line);
+  padding: 5px 9px;
+  border-radius: 5px;
+  background: rgba(237,237,234,0.025);
+  transition:
+    border-color 0.2s var(--ease),
+    color 0.2s var(--ease),
+    background 0.2s var(--ease);
+}
+
+.project:hover .project__tags span{
+  border-color: var(--accent-soft);
+}
+
+.project__preview{
+  transition: transform 0.4s var(--ease);
+}
+
+.project:hover .project__preview{
+  transform: translateY(-3px);
+}
+
+.project__preview .browser{
+  transition:
+    border-color 0.3s var(--ease),
+    box-shadow 0.3s var(--ease);
+}
+
+.project:hover .project__preview .browser{
+  border-color: rgba(201,161,90,0.28);
+  box-shadow: 0 28px 70px -24px rgba(0,0,0,0.8);
+}
+
+@media (max-width: 560px){
+
+  .project__tags{
+    margin-bottom: 20px;
+  }
+
+  .project__tags span{
+    font-size: 10px;
+  }
+
+}
